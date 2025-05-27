@@ -1,0 +1,93 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{amsmath, amssymb}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Computer Security Report}
+\lhead{\textit{Your Name}}
+\cfoot{\thepage}
+
+% Code Listing
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    backgroundcolor=\color{gray!10},
+    frame=single,
+    captionpos=b
+}
+
+\title{\textbf{Computer Security Report} \\ \large Title of Your Project}
+\author{Your Name \\
+Institution / Course \\
+\texttt{your.email@example.com}
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This report investigates [brief description of your topic or system]. We analyze potential threats, evaluate attack surfaces, and propose mitigation strategies to improve overall security posture.
+\end{abstract}
+
+\section{Introduction}
+Provide a high-level overview of the system, application, or protocol under analysis. Include context and motivation for the report.
+
+\section{System Overview}
+Explain the architecture or design of the system. Include diagrams if necessary.
+
+\section{Threat Model}
+\begin{itemize}
+    \item \textbf{Assets:} What is being protected?
+    \item \textbf{Adversaries:} Who might attack the system?
+    \item \textbf{Capabilities:} What can the adversary do?
+    \item \textbf{Security Goals:} What must be preserved?
+\end{itemize}
+
+\section{Attack Scenarios}
+Describe one or more potential attacks against the system, including:
+\begin{itemize}
+    \item Attack vectors
+    \item Exploited vulnerabilities
+    \item Impacts
+\end{itemize}
+
+\section{Mitigation Strategies}
+List defenses or improvements, such as:
+\begin{itemize}
+    \item Input validation
+    \item Cryptographic protections
+    \item Access control policies
+\end{itemize}
+
+\section{Evaluation (Optional)}
+If applicable, describe how your mitigation was tested, including experiments, simulations, or theoretical arguments.
+
+\section{Related Work}
+Briefly discuss other research or known attacks/defenses relevant to your topic.
+
+\section{Conclusion}
+Summarize key points and reflect on the security implications of your findings.
+
+\section*{References}
+% Use BibTeX or manually enter references
+\begin{itemize}
+    \item Author. \textit{Title}. Conference/Journal, Year.
+    \item \url{https://example.com/resource}
+\end{itemize}
+
+\end{document}
