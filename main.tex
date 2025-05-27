@@ -12,6 +12,12 @@
 \usepackage{amsmath, amssymb}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{booktabs} % For better table lines
+\usepackage{pgfplots} % For plotting graphs
+\usepackage{tikz} % For drawing graphics
+
+% PGFPlots compatibility
+\pgfplotsset{compat=1.18}
 
 % Header/Footer
 \pagestyle{fancy}
@@ -22,16 +28,16 @@
 
 % Code Listing
 \lstset{
-    basicstyle=\ttfamily\small,
-    breaklines=true,
-    backgroundcolor=\color{gray!10},
-    frame=single,
-    captionpos=b
+basicstyle=\ttfamily\small,
+breaklines=true,
+backgroundcolor=\color{gray!10},
+frame=single,
+captionpos=b
 }
 
-\title{\textbf{Computer Security Report} \\ \large Title of Your Project}
-\author{Your Name \\
-Institution / Course \\
+\title{\textbf{Trends, Transparency, and Legal Evolution in Electronic Surveillance} \ \large }
+\author{Your Name \
+Institution / Course \
 \texttt{your.email@example.com}
 }
 \date{\today}
@@ -41,53 +47,7 @@ Institution / Course \\
 \maketitle
 
 \begin{abstract}
-This report investigates [brief description of your topic or system]. We analyze potential threats, evaluate attack surfaces, and propose mitigation strategies to improve overall security posture.
+This report investigates the evolving landscape of electronic surveillance, specifically focusing on wiretap trends, their associated costs, and the impact of technological advancements and legal reforms. We analyze data from official U.S. Courts wiretap reports and carrier transparency disclosures, identifying key trends in authorization rates, target offenses, and the increasing challenge posed by encryption. A critical examination of transparency failures, particularly concerning geofence warrants and inconsistent reporting between government agencies and telecommunication providers, is presented.We deduce underlying causal relationships, highlight contradictions in public data, and infer broader implications for digital privacy and civil liberties
 \end{abstract}
-
-\section{Introduction}
-Provide a high-level overview of the system, application, or protocol under analysis. Include context and motivation for the report.
-
-\section{System Overview}
-Explain the architecture or design of the system. Include diagrams if necessary.
-
-\section{Threat Model}
-\begin{itemize}
-    \item \textbf{Assets:} What is being protected?
-    \item \textbf{Adversaries:} Who might attack the system?
-    \item \textbf{Capabilities:} What can the adversary do?
-    \item \textbf{Security Goals:} What must be preserved?
-\end{itemize}
-
-\section{Attack Scenarios}
-Describe one or more potential attacks against the system, including:
-\begin{itemize}
-    \item Attack vectors
-    \item Exploited vulnerabilities
-    \item Impacts
-\end{itemize}
-
-\section{Mitigation Strategies}
-List defenses or improvements, such as:
-\begin{itemize}
-    \item Input validation
-    \item Cryptographic protections
-    \item Access control policies
-\end{itemize}
-
-\section{Evaluation (Optional)}
-If applicable, describe how your mitigation was tested, including experiments, simulations, or theoretical arguments.
-
-\section{Related Work}
-Briefly discuss other research or known attacks/defenses relevant to your topic.
-
-\section{Conclusion}
-Summarize key points and reflect on the security implications of your findings.
-
-\section*{References}
-% Use BibTeX or manually enter references
-\begin{itemize}
-    \item Author. \textit{Title}. Conference/Journal, Year.
-    \item \url{https://example.com/resource}
-\end{itemize}
 
 \end{document}
