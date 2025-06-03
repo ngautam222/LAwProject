@@ -42,7 +42,7 @@ Pawan Jayakumar \\
 UCSD \\
 \texttt{apatel@example.edu}
 \and
-Joey WU \\
+Joey Wu \\
 UCSD \\
 \texttt{crivera@example.edu}
 \and
@@ -62,27 +62,44 @@ UCSD\\
 \maketitle
 
 \begin{abstract}
-This report investigates the evolving landscape of electronic surveillance, specifically focusing on wiretap trends, their associated costs, and the impact of technological advancements and legal reforms. We analyze data from official U.S. Courts wiretap reports and carrier transparency disclosures, identifying key trends in authorization rates, target offenses, and the increasing challenge posed by encryption. A critical examination of transparency failures, particularly concerning geofence warrants and inconsistent reporting between government agencies and telecommunication providers, is presented. We deduce underlying causal relationships, highlight contradictions in public data, and infer broader implications for digital privacy and civil liberties.
+\noindent This report investigates the evolving landscape of electronic surveillance, specifically focusing on wiretap trends, their associated costs, and the impact of technological advancements and legal reforms. We analyze data from official U.S. Courts wiretap reports and carrier transparency disclosures, identifying key trends in authorization rates, target offenses, and the increasing challenge posed by encryption. A critical examination of transparency failures, particularly concerning geofence warrants and inconsistent reporting between government agencies and telecommunication providers, is presented. We deduce underlying causal relationships, highlight contradictions in public data, and infer broader implications for digital privacy and civil liberties.
 \end{abstract}
 
 \section{Introduction}
 \label{sec:introduction}
-Electronic surveillance operations in the United States have undergone substantial transformation over the past two decades. This longitudinal analysis examines wiretap data patterns from 2004 to 2023, tracking how law enforcement surveillance practices have evolved alongside technological developments and shifts in criminal activity. Our investigation draws primarily from annual reports mandated by Title III of the Omnibus Crime Control and Safe Streets Act of 1968 (18 U.S.C. § 2519), which requires detailed congressional reporting of intercepted communications.\footnote{Insert actual citation here.}
+\noindent Electronic surveillance operations in the United States have undergone substantial transformation over the past two decades. This longitudinal analysis examines wiretap data patterns from 2004 to 2023, tracking how law enforcement surveillance practices have evolved alongside technological developments and shifts in criminal activity. Our investigation draws primarily from annual reports mandated by Title III of the Omnibus Crime Control and Safe Streets Act of 1968 (18 U.S.C. § 2519), which requires detailed congressional reporting of intercepted communications.\footnote{Insert actual citation here.}\\
 
-This analysis tracks several key metrics across the study period: authorization rates and judicial approval patterns, cost trends and resource allocation, target offense categories and their evolution, success rates measured by arrests and convictions, and the growing prevalence of encryption as an investigative obstacle. By examining these longitudinal trends, we identify patterns that illuminate how electronic surveillance has adapted to technological change, policy shifts, and evolving criminal landscapes.
+\noindent This analysis tracks several key metrics across the study period: authorization rates and judicial approval patterns, cost trends and resource allocation, target offense categories and their evolution, success rates measured by arrests and convictions, and the growing prevalence of encryption as an investigative obstacle. By examining these longitudinal trends, we identify patterns that illuminate how electronic surveillance has adapted to technological change, policy shifts, and evolving criminal landscapes.\\
 
-The scope of electronic surveillance has expanded considerably beyond traditional "wiretapping" as originally conceived under Title III. Modern operations predominantly target portable devices, encompassing cellular communications, text messaging, and application-based communications.\footnote{Insert citation here.} This evolution reflects both technological advancement and the migration of criminal activity to digital platforms. Our analysis documents how these changes have affected surveillance effectiveness, costs, and other broader implications.
+\noindent The scope of electronic surveillance has expanded considerably beyond traditional "wiretapping" as originally conceived under Title III. Modern operations predominantly target portable devices, encompassing cellular communications, text messaging, and application-based communications.\footnote{Insert citation here.} This evolution reflects both technological advancement and the migration of criminal activity to digital platforms. Our analysis documents how these changes have affected surveillance effectiveness, costs, and other broader implications.\\
 
-Rather than presenting isolated yearly statistics, this longitudinal approach reveals underlying trends, cyclical patterns, and inflection points that single-year analyses often miss. The data demonstrates how external factors, from technological developments to policy changes, have shaped surveillance practices over time, providing insights into both current operations and future trajectories.
+\noindent Rather than presenting isolated yearly statistics, this longitudinal approach reveals underlying trends, cyclical patterns, and inflection points that single-year analyses often miss. The data demonstrates how external factors, from technological developments to policy changes, have shaped surveillance practices over time, providing insights into both current operations and future trajectories.
 
-\section{Wiretap Cost Analysis}
-A central metric in evaluating surveillance sustainability is the average cost of a wiretap. From 2001 to 2022, costs fluctuated between \$40,000 and \$160,000 per intercept, depending on duration, complexity, and jurisdiction. However, in 2023, the national average surged to an unprecedented \$1.71 million—primarily due to a single state case in Suffolk County, New York. This 180-day narcotics wiretap reportedly cost over \$354 million, drastically inflating national averages. Excluding this outlier, federal wiretap costs remained more stable, averaging around \$105,000.
+\section{Background and Related Work}
+
+\noindent Every year, the Federal Court system of the United States compiles and releases reports on federal and local law enforcement's interceptions on people's communications, as required by law since 1968 with the Omnibus Crime Control and Safe Streets Act. These reports are henceforth referred to as the "Wiretap Reports", which contain information reported by federal and state officials on applications for interception of wire, oral, or electronic communications. The data reported is comprehensive and goes into great detail, encompassing the types of offense under investigation, the types and location of interception devices, and the cost and duration of authorized intercepts. \footnote{https://www.uscourts.gov/data-news/reports/statistical-reports/wiretap-reports}\\
+
+\noindent However, for many years, privacy and civil liberties advocates, legal experts, and other related parties have pointed out various inaccuracies and inconsistencies present in the Wiretap Reports. The first set of issues commonly raised is with regard to discrepancies in wiretap orders as reported by federal officials versus mobile carrier companies. For context, the major telecommunications carriers based in the US, namely Verizon, T-Mobile, and AT\&T, publish annual or biannual data on the number of wiretap orders received, in addition to court orders, subpoenas, and other legal requirements. In an 2015 article, Gidari points out that the number of wiretap orders reported by the US courts in the year prior do not match up with the numbers reported by the carrier companies. He comments that the courts seem to severely under-report the number of wiretap orders, even when accounting for possible reasons, such as one wiretap order served on multiple carriers being double-counted or worse. \footnote{https://www.justsecurity.org/24707/governments-wiretap-orders-add/}. A 2021 study of the Administrative Office (AO) of the US Courts' Wiretap Report also addresses the inconsistencies and missing data found in the reports. \footnote{https://www.documentcloud.org/documents/21151429-wiretap-study-report-final/}. There are also numerous other studies and articles which address the rising costs \footnote{https://www.mercatus.org/research/data-visualizations/going-dark-federal-wiretap-data-show-scant-encryption-problems} and possible increase in intercepted communications which were unable to be deciphered due to the rising prevalence of encryption \footnote{https://www.zuckerman.com/news/insightzs/warranted-wiretapping-what-look-years-wiretap-report}, as observed in recent Wiretap Reports.\\
+
+\noindent Accurate longitudinal data is necessary for policymakers to make sound and informed decisions that impact privacy, law enforcement and civil liberties. Therefore it is important to identify and highlight trends and inconsistencies in the official wiretap data, especially in light of rapid technological advancements in encryption, security, articial intelligence and other related areas.
+
+\section{Methodology}
+
+\section{Results}
+
+\subsection{Wiretap Cost Analysis}
+A central metric in evaluating surveillance sustainability is the average cost of a wiretap. From 2001 to 2022, costs fluctuated between \$40,000 and \$160,000 per intercept, depending on duration, complexity, and jurisdiction. However, in 2023, the national average surged to an unprecedented \$1.71 million—primarily due to a single state case in Suffolk County, New York. This 180-day narcotics wiretap reportedly cost over \$354 million, drastically inflating national averages. Excluding this outlier, federal wiretap costs remained more stable, averaging around \$105,000.\\
+
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\columnwidth]{output-3.png}
 \caption{Average cost per wiretap order from 2001 to 2023.}
 \label{fig:costgraph}
 \end{figure}
+
+\section{Discussion}
+
+\section{Future Work}
 
 
 \end{document}
